@@ -1,0 +1,66 @@
+#
+# This is an example of a bbslist template.
+# 
+# Anything after a '#' is considered a comment and is ignored.
+# Anything That doesn't begin with a [ is ignored.
+#
+# The ~ Codes in parenthases are MCIs to access the values
+# (~BN) [BBSName]: BBS Name
+# (~SN) [SysOpName]: Sysop Name
+# (~MN) [MaxNodes]: Max Nodes
+# (~BP) [Port]: Telnet Port
+# (~TN) [TelnetUrl]: Telnet Url
+# (~WS) [WebSiteUrl]: Website
+# (~PN) [PhoneNumber]: BBS Phone Number
+# (~LO) [Location]: Location of BBS
+# (~SW) [Software]: BBS Software Used
+# (~SV) [SoftwareVersion]: BBS Software Version
+# (~OS) [OS]: Operating System of BBS
+# (~SP) [Speed]: Speed of the BBS
+# (~HR) [Hours]: Hours of Operation
+# (~ST) [Birth]: When the bbs started
+# (~DS) [Description]: Description
+# (~D2) [Description2]: Description 2
+# (~SA) [SDA]: SysOp Definable String 8
+# (~SB) [SDB]: SysOp Definable String 30
+# (~SC) [SDC]: SysOp Definable String 30
+# (~SD) [SDD]: SysOp Definable String 40
+# (~SE) [SDE]: SysOp Definable String 60            
+# (~SF) [SDF]: SysOp Definable String 60
+# (~SG) [SDG]: SysOp Definable Number
+# (~SH) [SDH]: SysOp Definable Yes/No (Default Yes)
+# (~SI) [SDI]: SysOp Definable Yes/No (Default No)
+# !! Extra Display Codes !!
+# (~AC) : Area Code
+# (~DA) : Date Added
+# (~DE) : Date Edited
+# (~RN) : Record Number
+# (~UN) : User who added record
+#
+# if you want to ask the questions in a certain order change the order.
+# if you don't want to ask a question then leave it out.
+#
+# MCI and Pipe Color Codes are allowed in the question.
+#
+# Start BBS List Questions
+#
+[BBSName]:%DFAEBBS%%LF  |03Enter the Name of BBS |15:|11
+[SysOpName]:%LF  |03What is the Sysop of this BBS name? |15:|11
+[TelnetUrl]:%LF  |03What is the Telnet Address of the BBS?%LF  |15:|11
+[Port]:%LF  |03What port can this BBS be reached at? |15:|08
+[WebSiteUrl]:%LF  |03What is the web address of the BBS?%LF  |15:|11
+[PhoneNumber]:%DFAEBBS%%LF  |03BBS Phone Number |08(|07if any|08) |15:|11
+[Location]:%LF  |03What is the location of this BBS? |15:|11
+[Software]:%LF  |03What Software does this BBS use? |15:|11
+[SoftwareVersion]:%LF  |03Software Version? |15:|11
+[OS]:%LF  |03Operating System? |15:|11
+[MaxNodes]:%LF  |03How Many Nodes? |15:|08
+[Speed]:%DFAEBBS%%LF  |03What is the Speed of the BBS? |08(|072400, 56700, Telnet|08) |15:|11
+[Hours]:%LF  |03What hours does this bbs run? |08(|0724/7 |08.. |076am-3pm|08) |15:|11
+[Birth]:%LF  |03When did this bbs start? 
+[Description]:%LF  |03Enter a small description of the BBS 60 Chars Max. 2 Lines%LF |15 : |11
+[Description2]:  |15: |11
+#[SDG]:%LF  |03Number Test? |15:|08
+#[SDH]:%LF  |03BBS Is 24/7? |15:|11
+#[SDI]:%LF  |03Private Nodes? |15:|11
+

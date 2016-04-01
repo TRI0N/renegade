@@ -1,0 +1,6 @@
+[submodule "src/3rdparty/fundamentals"]
+	path = src/3rdparty/fundamentals
+	url = https://github.com/fundamentalslib/fundamentals5
+[submodule "src/3rdparty/crypt/scrypt"]
+	path = src/3rdparty/crypt/scrypt
+	url = https://github.com/Tarsnap/scrypt.git
